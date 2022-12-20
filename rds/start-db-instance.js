@@ -20,7 +20,7 @@ export const handler = async (event) => {
 
   const result = {
     statusCode: 200,
-    body: JSON.stringify('Hello from Lambda!'),
+    body: JSON.stringify('Start db-instance from Lambda!'),
   };
   return result;
 };

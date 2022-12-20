@@ -5,7 +5,7 @@ import {
 } from '@aws-sdk/client-rds'; // ES Modules import
 
 const client = new RDSClient({
-  region: 'ap-southeast-1',
+  region: 'us-east-1',
 });
 
 export const handler = async (event) => {
@@ -24,7 +24,7 @@ export const handler = async (event) => {
 
   const result = {
     statusCode: 200,
-    body: JSON.stringify('Hello from Lambda!'),
+    body: JSON.stringify('Stop db-instance from Lambda!'),
   };
   return result;
 };

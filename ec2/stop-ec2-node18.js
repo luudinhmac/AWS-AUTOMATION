@@ -18,7 +18,7 @@ export const handler = async (event) => {
 
   const result = {
     statusCode: 200,
-    body: 'Hello from VietAWS',
+    body: 'Stop ec2 from lambda',
   };
   return result;
 };
