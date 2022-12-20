@@ -4,14 +4,14 @@ const AWS = require('aws-sdk');
 exports.handler = async (event) => {
   // TODO implement
   // set the region
-  AWS.config.update({ region: 'ap-southeast-1' });
+  AWS.config.update({ region: 'us-east-1' });
 
   // create an ec2 object
   var ec2 = new AWS.EC2({ apiVersion: '2016-11-15' });
 
   // setup instance params
   var params = {
-    InstanceIds: ['i-0b810d0332aac0995'],
+    InstanceIds: ['i-027fc5b2d4a27601c'],
   };
   // await ec2.stopInstances(params)
 
